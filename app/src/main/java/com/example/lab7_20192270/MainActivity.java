@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        mAuth = FirebaseAuth.getInstance();
+        //mAuth = FirebaseAuth.getInstance();
 
         binding.button.setOnClickListener(view -> {
             Intent intent = new Intent(MainActivity.this, MenuSalon.class);
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         signInLauncher.launch(intent);
 */
-        FirebaseAuth auth = FirebaseAuth.getInstance();
+        /*FirebaseAuth auth = FirebaseAuth.getInstance();
         if (auth.getCurrentUser() != null){
             Log.d("msg","uid: " + auth.getCurrentUser().getUid());
             Log.d("msg","name: " + auth.getCurrentUser().getDisplayName());
@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
     );
-
+*/
+    }
 
 }
